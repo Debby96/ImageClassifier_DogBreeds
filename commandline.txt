@@ -1,0 +1,68 @@
+#ResNet: ** Total Elapsed Runtime: 0:0:45
+#VGG: ** Total Elapsed Runtime: 0:1:27
+#AlexNet: ** Total Elapsed Runtime: 0:0:16
+python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
+
+AlexNet, VGG, and ResNet
+
+The more images of two similar-looking dog breeds that the algorithm has learned from, the more likely the algorithm will be able to distinguish between those two breeds. 
+Great Pyrenees and Kuvasz, German Shepherd and Malinois, Beagle and Walker Hound,
+
+
+Principal Objectives
+1. Correctly identify which pet images are of dogs (even if the breed is misclassified) and which pet images aren't of dogs.  
+2. Correctly classify the breed of dog, for the images that are of dogs.  
+3. Determine which CNN model architecture (ResNet, AlexNet, or VGG), "best" achieve objectives 1 and 2.  
+4. Consider the time resources required to best achieve objectives 1 and 2, and determine if an alternative solution would have given a "good enough" result, given the amount of time each of the algorithms takes to run.
+
+ResNet: ** Total Elapsed Runtime: 0:0:45
+VGG: ** Total Elapsed Runtime: 0:1:27
+AlexNet: ** Total Elapsed Runtime: 0:0:16
+
+
+Dogs /not dogs
+Breed of dog
+Which CNN model architecture best achieves
+Time
+
+
+Program Outline
+* Time your program
+    * Use Time Module to compute program runtime
+* Get program Inputs from the user
+    * Use command line arguments to get user inputs
+* Create Pet Images Labels
+    * Use the pet images filenames to create labels
+    * Store the pet image labels in a data structure (e.g. dictionary)
+* Create Classifier Labels and Compare Labels
+    * Use the Classifier function to classify the images and create the classifier labels
+    * Compare Classifier Labels to Pet Image Labels
+    * Store Pet Labels, Classifier Labels, and their comparison in a complex data structure (e.g. dictionary of lists)
+* Classifying Labels as "Dogs" or "Not Dogs"
+    * Classify all Labels as "Dogs" or "Not Dogs" using dognames.txt file
+    * Store new classifications in the complex data structure (e.g. dictionary of lists)
+* Calculate the Results
+    * Use Labels and their classifications to determine how well the algorithm worked on classifying images
+* Print the Results
+
+
+V adjust
+V calculates
+V classify_images
+V get_input_args
+V get_pet_labels return None
+V print_results.py
+
+
+Check images
+
+
+1. Extract the pet image label from the filename
+2. Classify the images
+3. Compare different architectures
+
+#    python check_images.py --dir pet_images/ --arch vgg --dogfile dognames.txt
+
+
+Adjust line 141
+Calculates line 100, 104, 109, 129
